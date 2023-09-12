@@ -50,7 +50,7 @@ const Portfolio = () => {
         
         <div className="grid gap-5 md:grid-cols-3">
             {projects.map(project=>{
-                return <Image className="w-full" src={project.src} alt="projects image" width={project.width} height={project.height} />
+                return <Image key={project.id} className="w-full ${}" src={project.src} alt="projects image" width={project.width} height={project.height} />
             })}
         </div>
       
