@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaLaptopCode, FaServicestack,FaArrowRight,FaLaptop,FaDigitalOcean, FaCode, FaDatabase, FaRegIdBadge, FaIdeal } from 'react-icons/fa'
 import {TbBulb} from'react-icons/tb';
 import {CgWebsite} from 'react-icons/cg'
+import Portfolio from "@/components/Portfolio";
 export default function Home() {
   return (
     <main>
@@ -232,13 +233,8 @@ export default function Home() {
       {/* Portfolio */}
       <div>
         <Wrapper>
-          <div className="py-12 grid lg:grid-cols-2 reverse">
-            
-          <div className="grid mb-10 lg:mb-0 place-content-center place-items-center ">
-              <Image  src='/illustration-3.png'  width={500} height={500} quality={75} alt="about us"/>
-            </div>
-            
-            <div className="">
+          <div className="py-12"> 
+          <div className="mb-5">
             <span className="flex items-center uppercase font-semibold gap-1 mb-3">
               <span className="w-2 h-2 bg-slate-600 rounded-full"></span>
           PORTFOLIO
@@ -250,7 +246,7 @@ export default function Home() {
               <Link href="/" className="bg-indigo-600 hover:bg-indigo-500 text-white inline-block px-8 py-4 rounded-bl-[32px] rounded-tr-[32px]">Get in Touch</Link>
             </div>
             </div>
-  
+    <Portfolio/>
           </div>
       
         </Wrapper>
