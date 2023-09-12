@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+@layer components{
+    .lg-nav{
+        @apply static flex h-auto items-center space-x-5 p-0 w-auto m-0 bg-opacity-0 shadow-none py-0 space-y-0
+    }
+     .lg-link{
+        @apply   px-2 py-1 hover:bg-slate-100  rounded-md transition-all ease-linear duration-300
+    }
+    .mobile-link{
+        @apply  block hover:bg-slate-100 px-4  transition-all ease-linear duration-300 py-2
+    }
+    .mobile-nav{
+        @apply absolute bg-white shadow-lg h-screen  py-10 z-20 m-0 top-0 w-[250px] sm:w-[300px] duration-500 right-0 transition-transform
+    }
+}
