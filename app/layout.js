@@ -1,4 +1,3 @@
-import reportAccessibility from '@/utils/reportAccessibility'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import React from 'react'
@@ -26,5 +25,4 @@ function RootLayout({ children }) {
     </html>
   )
 }
-reportAccessibility(React)
 export default RootLayout
